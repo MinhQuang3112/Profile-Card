@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to top, rgb(51, 48, 48),rgba(216, 23, 200, 0.1)), url(https://wallpaperaccess.com/full/885072.jpg) no-repeat center/cover ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+}
+
+.card{
+    background-color: #fff;
+    width: 320px;
+    height:450px;
+    overflow: hidden;
+    border-radius: 40px;
+    position: relative;
+    
+}
+.card-cover-img{
+    display:block;
+    width: 100%;
+    height: 35%;
+    opacity: 0.9;
+    
+}
+.card-avt{
+    background-color: #fff;
+    object-position:center;
+    object-fit:contain;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border:10px solid #fff;
+    z-index: 1;
+    top:30px;
+    transform: translateY(50%);
+    right: 100px;
+    transition: all 0.3s linear;
+}
+.card-avt:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform:unset;
+    object-position:bottom;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    border:none;
+    
+}
+.card-box{
+    margin: 80px 20px 0;
+}
+.card-name{
+    text-align:center;
+    color:rgb(48, 40, 40);
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.card-profession{
+    text-align:center;
+    margin:3px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.card-description{
+    text-align:center;
+    margin: 30px 0;
+    opacity: 0.8;
+}
+.card-social{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 60px;
+}
+.card-link:hover .fab{
+    transform:translateY(-20px);
+    transition:all 0.25s linear;
+}
+.card-link:hover .fa-facebook{
+    color: #1094F4;
+}
+.card-link:hover .fa-instagram{
+    color: #f44336;
+}
+.card-link:hover .fa-github{
+    color: #ff3def;
+}
+.card-link:hover .fa-tiktok{
+    color: #2bfdd0;
+}
+.card-link:hover .fa-codepen{
+    color: #ffdb0e;
+}
+.fab{
+    padding:0 12px;
+    font-size: 22px;
+    color: black;
+}
