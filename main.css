@@ -96,7 +96,7 @@ body {
     color: #ff3def;
 }
 .card-link:hover .fa-tiktok{
-    color: #2bfdd0;
+    color: rgb(255, 0, 0);
 }
 .card-link:hover .fa-codepen{
     color: #ffdb0e;
